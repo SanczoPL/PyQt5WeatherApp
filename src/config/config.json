@@ -1,3 +1,8 @@
 {
-  "Test": 23
+  "Api":
+  {
+    "Appid" : "af06387be307d09b16c8dfefe818253d",
+    "Forecasts" : "https://api.openweathermap.org/data/2.5/forecast?lat=35.88&lon=76.51&APPID={}&units=metric",
+    "Weather" : "https://api.openweathermap.org/data/2.5/weather?lat=35.88&lon=76.51&APPID={}7Bklucz%7D&units=metric"
+  }
 }
