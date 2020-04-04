@@ -4,11 +4,10 @@ import json
 
 
 class ConfigReader():
-    def __init__(self, name):
+    def __init__(self):
         super().__init__()
-        self.name = name
 
-    def load(self):
-        with open(self.name, "r") as read_file:
+    def load(self, name):
+        with open(name, "r") as read_file:
             data = json.load(read_file)
         return data
