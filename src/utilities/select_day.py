@@ -8,7 +8,6 @@ class SelectDay():
         super().__init__()
 
     def select(self, data, day):
-        #$#day = '2020-04-05'
         selected_day = []
 
         print(len(data["list"]))
