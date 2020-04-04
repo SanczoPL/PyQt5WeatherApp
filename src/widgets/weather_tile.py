@@ -1,16 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from PyQt5 import QtSvg
-from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QGridLayout
-
+#from PyQt5 import QtSvg
+#from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QGridLayout
+from PySide2.QtWidgets import (QApplication, QLabel, QWidget, QHeaderView, QHBoxLayout, QTableView, QSizePolicy, QGridLayout)
+from PySide2 import QtSvg
 
 class WeatherTile(QWidget):
     def __init__(self, svgImage, labelname, max, min):
         super().__init__()
         self.svgWidget = QtSvg.QSvgWidget(svgImage)
         self.label = QLabel(labelname, self)
-        self.labelMin = QLabel(min, self)
-        self.labelMax = QLabel(max, self)
+        self.labelMin = QLabel(str(min))
+        self.labelMax = QLabel(str(max))
         # Instance:
         self.schemeLabelMinMax = QGridLayout()
         self.widgetMinMax = QWidget()
